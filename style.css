@@ -1,0 +1,164 @@
+*, html {
+    margin:0;
+    padding: 0
+}
+
+body {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: sans-serif;
+}
+
+.navbar {
+   background-color: rgba(37, 37, 37, 0.479);
+   display:flex;
+   justify-content: space-around;
+   align-items: center;
+   font-size: 1.6rem;
+   color: white;
+   height:auto;
+   padding: 10px;
+}
+
+@media (max-width:480px) {
+    .navbar {
+        opacity: 0;
+        display:none;
+    }
+}
+
+ul {
+    margin-top: 10px;
+}
+
+.ul-mobile {
+    margin:0;
+}
+.subnav .subnavbtn {
+font-size: 1.6rem  ;
+  border: none;
+  outline: none;
+  color: white;
+ 
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+
+}
+.subnav-content {
+
+opacity: 0;
+display: none;
+position:absolute;
+
+}
+
+.visible {
+
+    opacity:1;
+    display: flex;
+    flex-direction: column;
+}
+
+
+li {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(37, 37, 37, 0.479);;
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+
+@media (max-width:480px) {
+    li {
+        margin:0 25px;
+    }
+    
+}
+
+a {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a, .subnav  {
+    text-decoration: none;
+    color: white;
+  
+}
+
+.navbar a:hover , .subnavbtn:hover{
+    background-color: grey;
+    text-decoration: underline;
+}
+
+#products{
+    border: 1px solid black;
+    margin:0;
+    padding: 8px 4px;
+    
+}
+
+.mobile-navbar {
+    margin: auto;
+    background-color: #555;
+    height: 500px;
+    color: white;
+    padding-top:10px;
+    padding-left: 10px;
+    display: none;
+    opacity:0;
+
+  }
+
+  @media (max-width:480px) {
+    .mobile-navbar {
+    display: block;
+    opacity:1;
+    }
+  }
+
+  #mobile-products {
+    position: relative;
+  }
+
+  .mobile-links {
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1rem;
+    gap:5px;
+    display: none;
+    opacity:0;
+  }
+
+  .mobile-links a {
+    text-decoration: none;
+    color: white;
+    padding-bottom: 5px;
+    background-color: #555;;
+  }
+
+  .mobile-links a:hover {
+    text-decoration: underline;
+  
+  } 
+
+  .mobile-subnav-content {
+   
+    opacity: 0;
+    display: none;
+    padding:0;
+    margin:0;
+
+    }
+
+    .visible-mobile {
+        opacity:1;
+        display: flex;
+      
+    }
+
+
